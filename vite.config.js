@@ -1,6 +1,7 @@
 // vite.config.js
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
@@ -11,6 +12,7 @@ export default defineConfig({
     watch: {
       // https://rollupjs.org/configuration-options/#watch
     },
+    outDir: './../dist'
   },
   plugins: [
     ViteImageOptimizer({
@@ -74,5 +76,13 @@ export default defineConfig({
         lossless: true,
       },
     }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: './../node_modules/aos/dist/aos.css',
+          dest: 'vendor'
+        },
+      ]
+    })
   ],
 })

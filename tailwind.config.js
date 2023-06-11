@@ -2,7 +2,15 @@
 export default {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+        '2000': '2000ms',
+      },
+      transitionProperty: {
+        'height': 'height',
+        'padding': 'padding',
+      }
+    },
   },
   plugins: [],
 }

@@ -14,11 +14,19 @@
     "sass": "^1.63.3",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.9",
-    "vite-plugin-image-optimizer": "^1.1.6"
+    "vite-plugin-image-optimizer": "^1.1.6",
+    "vite-plugin-static-copy": "^0.16.0"
   },
   "dependencies": {
+    "@alpinejs/intersect": "^3.12.2",
     "alpinejs": "^3.12.2",
+    "aos": "^3.0.0-beta.6",
     "cssnano": "^6.0.1",
+    "get-size": "^3.0.0",
+    "isotope-layout": "^3.0.6",
+    "parallax-js": "^3.1.0",
+    "sharp": "^0.32.1",
+    "swiper": "^9.3.2",
     "vite-plugin-purgecss": "^0.2.12"
   }
 }
