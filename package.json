@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build2": "vite build --base=/vite/",
+    "build2": "vite build --base=/vite/ --emptyOutDir",
     "preview": "vite preview",
     "gh-deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },

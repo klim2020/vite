@@ -1,5 +1,9 @@
 @import "tailwind";
 
+/*! purgecss start ignore */
+@import "./../../node_modules/aos/src/sass/aos.scss";
+/*! purgecss end ignore */
+
 @import "modes";
 
 @import "header";
